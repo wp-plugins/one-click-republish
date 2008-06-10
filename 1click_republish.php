@@ -11,13 +11,13 @@ Author URI: http://pirex.com.br/wordpress-plugins
     http://www.gnu.org/licenses/gpl.txt
 	
 
-	
-* Add the following line to your wp-xajax.php file:
-
-$xajax->registerFunction("oneClickRepublish_go");
- 
-
 */
+
+
+function oneclick_xajax(){
+	global $xajax;
+	$xajax->registerFunction("oneClickRepublish_go");
+}
 
 load_plugin_textdomain('oneclickrepublish', 'wp-content/mu-plugins/oneclickrepublish');
 
@@ -245,6 +245,7 @@ function oneClickRepublish_go($blog,$post){
 	
 }
 
+add_action('init','oneclick_xajax');
 add_action('wp_head','oneclick_add_styles');
 add_action('admin_menu','oneclick_add_menu');
 add_filter('the_content','oneclick_add_button');
