@@ -28,10 +28,6 @@ Note: Requires wp-xajax plugin.
 .../wp-content/mu-plugins/oneclickrepublish/bg.gif
 .../wp-content/mu-plugins/oneclickrepublish/...all the other files
 
-2. Add this line to the file wp-xajax.php
-
-$xajax->registerFunction("oneClickRepublish_go");
-
 == Usage ==
 
 Go to Site Admin > One Click Republish
