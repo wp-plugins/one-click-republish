@@ -6,6 +6,7 @@ Requires at least: 1.5
 Tested up to: 1.5
 Stable tag: 1.0
 
+Allows admin to define a "main blog" and give users permission to republish a post into it with one click as they visit the blogs from the community.
 
 == Description ==
 
